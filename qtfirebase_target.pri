@@ -177,8 +177,8 @@ contains(DEFINES,QTFIREBASE_BUILD_MESSAGING) {
         message( "QtFirebase Messaging requires iOS v10.x+ to build." )
         message( "Remember to set QMAKE_IOS_DEPLOYMENT_TARGET in your .pro" )
         # Removed due to Qt 5.12 - see https://github.com/Larpon/QtFirebase/issues/106
-        # QMAKE_IOS_DEPLOYMENT_TARGET = 10.0
-
+        QMAKE_IOS_DEPLOYMENT_TARGET = 10.2
+        QMAKE_IOS_TARGETED_DEVICE_FAMILY = 1
         LIBS += \
             -F$$QTFIREBASE_FRAMEWORKS_ROOT/Messaging \
             -framework FirebaseMessaging \

@@ -17,7 +17,7 @@
     Q_UNUSED(application);
     Q_UNUSED(launchOptions);
     // Use Firebase library to configure APIs
-    //[FIRApp configure];
+    [FIRApp configure];
 
     return YES;
 }
